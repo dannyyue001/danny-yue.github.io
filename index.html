@@ -16,6 +16,33 @@
       color: white;
       padding: 1rem;
       text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav {
+      background-color: #495057;
+      padding: 0.5rem 0;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+    nav ul li {
+      margin: 0 1rem;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem;
+      font-weight: bold;
+    }
+    nav ul li a:hover {
+      background-color: #343a40;
+      border-radius: 4px;
     }
     section {
       padding: 2rem;
@@ -24,6 +51,7 @@
       background-color: white;
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-top: 1rem;
     }
     h2 {
       color: #343a40;
@@ -54,53 +82,61 @@
     <h1>Welcome to Danny Yue's Profile</h1>
   </header>
 
-  <section>
-    <div class="content-section">
-      <h2>About Me</h2>
-      <p>
-        Hi, I'm Danny Yue (also known as Yang Yue), a passionate software developer and data enthusiast currently pursuing a Master of Science in Information Management at the University of Washington. 
-        With a background in Informatics and Mathematics, I have a strong foundation in software engineering, data analysis, and logistics management.
-      </p>
-      <p>
-        My experience includes working with various companies in roles such as Software Development Intern and Data Analyst. I've optimized databases, built task management systems, and collaborated with teams to deliver software solutions ahead of schedule. 
-        I'm always eager to learn new technologies and apply them to solve complex problems.
-      </p>
-    </div>
+  <nav>
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    <div class="content-section">
-      <h2>Education</h2>
-      <ul>
-        <li><strong>Master of Science in Information Management</strong>, University of Washington (2024–2026)</li>
-        <li><strong>Bachelor of Science in Informatics</strong>, Minor in Mathematics (2020–2024)</li>
-      </ul>
-    </div>
+  <section id="about" class="content-section">
+    <h2>About Me</h2>
+    <p>
+      Hi, I'm Danny Yue (also known as Hua Tao), a passionate software developer and data enthusiast currently pursuing a Master of Science in Information Management at the University of Washington. 
+      With a background in Informatics and Mathematics, I have a strong foundation in software engineering, data analysis, and logistics management.
+    </p>
+    <p>
+      My experience includes working with various companies in roles such as Software Development Intern and Data Analyst. I've optimized databases, built task management systems, and collaborated with teams to deliver software solutions ahead of schedule. 
+      I'm always eager to learn new technologies and apply them to solve complex problems.
+    </p>
+  </section>
 
-    <div class="content-section">
-      <h2>Experience</h2>
-      <ul>
-        <li><strong>Software Development Intern</strong> at The Avary Group Global (2023–Present)</li>
-        <li><strong>Data Analyst Intern</strong> at Sixie Capital (2023)</li>
-        <li><strong>Logistics Operator</strong> at Xinzhou International Freight Forwarder Co. Ltd</li>
-      </ul>
-    </div>
+  <section id="education" class="content-section">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>Master of Science in Information Management</strong>, University of Washington (2024–2026)</li>
+      <li><strong>Bachelor of Science in Informatics</strong>, Minor in Mathematics (2020–2024)</li>
+    </ul>
+  </section>
 
-    <div class="content-section">
-      <h2>Skills</h2>
-      <ul>
-        <li>Programming Languages: Python, Java, SQL, C++</li>
-        <li>Web Development: HTML, CSS, JavaScript (React, Django)</li>
-        <li>Data Analysis: PostgreSQL, Wireshark, Tcpdump</li>
-        <li>Project Management: Agile, Git</li>
-      </ul>
-    </div>
+  <section id="experience" class="content-section">
+    <h2>Experience</h2>
+    <ul>
+      <li><strong>Software Development Intern</strong> at The Avary Group Global (2023–Present)</li>
+      <li><strong>Data Analyst Intern</strong> at Sixie Capital (2023)</li>
+      <li><strong>Logistics Operator</strong> at Xinzhou International Freight Forwarder Co. Ltd</li>
+    </ul>
+  </section>
 
-    <div class="content-section">
-      <h2>Contact</h2>
-      <ul>
-        <li>Email: <a href="mailto:yueyang20010531@gmail.com">yueyang20010531@gmail.com</a></li>
-        <li>GitHub: <a href="https://github.com/dannyyue001">github.com/dannyyue001</a></li>
-      </ul>
-    </div>
+  <section id="skills" class="content-section">
+    <h2>Skills</h2>
+    <ul>
+      <li>Programming Languages: Python, Java, SQL, C++</li>
+      <li>Web Development: HTML, CSS, JavaScript (React, Django)</li>
+      <li>Data Analysis: PostgreSQL, Wireshark, Tcpdump</li>
+      <li>Project Management: Agile, Git</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="content-section">
+    <h2>Contact</h2>
+    <ul>
+      <li>Email: <a href="mailto:yueyang20010531@gmail.com">yueyang20010531@gmail.com</a></li>
+      <li>GitHub: <a href="https://github.com/dannyyue001">github.com/dannyyue001</a></li>
+    </ul>
   </section>
 
   <footer>
