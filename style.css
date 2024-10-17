@@ -124,3 +124,17 @@ form textarea {
   resize: none;
 }
 
+.parallax {
+  background-image: url('your-background-image.jpg');
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content {
+  height: 500px;
+  text-align: center;
+  padding: 50px;
+}
