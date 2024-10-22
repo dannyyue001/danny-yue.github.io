@@ -27,31 +27,39 @@ header h1 {
 nav {
   background-color: #495057;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
+    }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  padding: 1.5rem 0;
-}
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 1.5rem 0;
+      
+      display: flex;
+    
+      background-color: #495057;
+      padding: 8px;
+      margin: 0;
+    }
 
-nav ul li {
-  margin: 0 1.5rem;
-}
+    nav ul li {
+      margin: 0 1.5rem;
+    }
 
-nav ul li a {
-  
-  text-decoration: none;
-  font-weight: 600;
-  padding: 0.5rem 1rem;
-  transition: background 0.3s ease-in-out;
-}
+    nav ul li a {
+      color: #f8f9fa;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+      transition: background 0.3s ease-in-out;
+    }
 
-nav ul li a:hover {
-  background-color: #343a40;
-  border-radius: 5px;
-}
+    nav ul li a:hover {
+      background-color: #343a40;
+      border-radius: 5px;
+    }
+
+
 
 section {
   padding: 3rem;
@@ -136,4 +144,13 @@ form textarea {
 }
 html {
   scroll-behavior: smooth;
+}
+.animated-link {
+  color: black;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.animated-link:hover {
+  color: #FF4500;
+  transform: scale(1.1);
 }
