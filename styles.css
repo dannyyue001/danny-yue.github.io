@@ -9,6 +9,7 @@ body {
   background-color: #e9ecef;
   color: #343a40;
   line-height: 1.6;
+
 }
 
 header {
@@ -94,11 +95,22 @@ footer {
   margin: 20px
   color: white;
   text-align: center;
-  padding: 1.5rem;
+  
   position: fixed;
   width: 100%;
   bottom: 0;
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  padding-top: 40px;
+
+ 
+  padding: 1rem;
+ 
+ 
+  
+
+
+
+
 }
 
 footer p {
@@ -249,4 +261,12 @@ html {
 
 section {
   animation: fadeIn 1.5s ease;
+}
+
+.edu-image img {
+  max-width: 100%; /* Ensure the image scales properly */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners for a polished look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin-top: 20px; /* Space between text and image */
 }
